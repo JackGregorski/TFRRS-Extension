@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "TFRRS Athlete Lookup",
+    "version": "1.0",
+    "description": "Highlight a name to lookup an athlete's top marks from TFRRS.",
+    "permissions": ["scripting", "activeTab"],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "icons": {
+      "48": "icon.png"
+    }
+  }
