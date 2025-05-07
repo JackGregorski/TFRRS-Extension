@@ -10,6 +10,10 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0"
 }
 
+@app.route("/")
+def index():
+    return "TFrrs Lookup API is live 🎯"
+
 def search_tfrrs_by_name_only(athlete_name):
     session = requests.Session()
 
